@@ -180,7 +180,7 @@ export function useSWRPages(pageKey, pageFn, SWRToOffset, deps = []) {
             p.push(pageCache[i].component);
         }
         return p;
-    }, [_pageFn, pageCount, pageSWRs, pageOffsets, pageKey]);
+    }, [_pageFn, pageCount, pageSWRs, pageOffsets, pageKey, pageOffsetKey]);
     return {
         pages,
         pageCount,

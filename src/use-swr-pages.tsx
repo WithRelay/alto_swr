@@ -219,7 +219,7 @@ export function useSWRPages<OffsetType = any, Data = any, Error = any>(
       p.push(pageCache[i].component)
     }
     return p
-  }, [_pageFn, pageCount, pageSWRs, pageOffsets, pageKey])
+  }, [_pageFn, pageCount, pageSWRs, pageOffsets, pageKey, pageOffsetKey])
 
   return {
     pages,
